@@ -39,6 +39,7 @@
 
 - (BOOL)oneClickPaySuppressHUD;
 - (BOOL)oneClickPayShouldRotate;
+
 @end
 
 
@@ -46,6 +47,7 @@
 
 - (void)oneClickFailedWithError:(NSError *)error;
 - (void)oneClickPaySuccessWithID:(NSString *)payment_id;
+- (void)oneClickPayInProcessingWithID:(NSString *)payment_id;
 
 - (void)oneClickPayCardList:(NSArray *)cardList;
 - (void)oneClickPayHistory:(NSArray *)history;
